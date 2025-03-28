@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "6269f9bb-b4df-4def-be06-80941065c8f4",
+		"name": "Weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16877195"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

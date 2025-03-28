@@ -12,31 +12,31 @@ Este es un paso a paso de cómo vamos a consumir la API
 
 ### Paso 1 (Creación de la cuenta)
 - Acceder al siguiente enlace: (https://openweathermap.org)
-- En la parte superior izquierda de la página damos click en la pestaña **Sign In**, así como lo muestra la siguiente imagen: ![alt text](image.png)
-- Si no tienes una cuenta, debes crearla, dando click aquí: ![alt text](image-2.png)
-- Una vez creada la cuenta nos llegará un correo de confirmación: ![alt text](image-3.png)
+- En la parte superior izquierda de la página damos click en la pestaña **Sign In**, así como lo muestra la siguiente imagen: ![alt text](images/image.png)
+- Si no tienes una cuenta, debes crearla, dando click aquí: ![alt text](images/image-2.png)
+- Una vez creada la cuenta nos llegará un correo de confirmación: ![alt text](images/image-3.png)
 
 ### Paso 2
 - Una vez tenemos nuestra cuenta nos llegan al correo de cómo consumir la API
-Ingresamos al siguiente enlace: (https://openweathermap.org/api) ![alt text](image-6.png)
-- Seleccionamos la API que deseamos consumir, en mi caso seleccioné **Datos meteorológicos actuales** y damos click en **Documentación de la API** ![alt text](image-7.png)
+Ingresamos al siguiente enlace: (https://openweathermap.org/api) ![alt text](images/image-6.png)
+- Seleccionamos la API que deseamos consumir, en mi caso seleccioné **Datos meteorológicos actuales** y damos click en **Documentación de la API** ![alt text](images/image-7.png)
 
 ### Paso 3 (Obtención de la API)
-- En la página nos brinda la URL de la API que vamos a consumir: ![alt text](image-8.png) 
+- En la página nos brinda la URL de la API que vamos a consumir: ![alt text](images/image-8.png) 
 [API](https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key})
 
 > **_nota_ debemos esperar unos minutos para poder hacer consumo de la API**
 
 ### Paso 4 (Consumo de la API en Postman)
 - Abrimos Postman
-- Creamos una nueva collección ![alt text](image-9.png) en mi caso la llamé **Weather**
-- Luego en la parte superior izquierda creamos un nuevo ambiente ![alt text](image-11.png) damos click en **Add**
-- Nombramos el ambiente ![alt text](image-12.png) yo lo llamé **Local** y añadimos la API key en campo **Initial value** y dejamo seleccionado este ambiente
-- Ahora, tomamos el ejemplo que nos dan en la página de el llamado de la API ![alt text](image-13.png) https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={API key} en donde se cambiaron la latitud y longitud de la localidad de los datos deseados
-- Lo pegamos en el **GET** de **New request** ![alt text](image-14.png) y camibamos el parámetro **{API key}** por la clave que añadimos en el ambiente **Local**, quedaría de al siguiente manera: ![alt text](image-15.png)
+- Creamos una nueva collección ![alt text](images/image-9.png) en mi caso la llamé **Weather**
+- Luego en la parte superior izquierda creamos un nuevo ambiente ![alt text](images/image-11.png) damos click en **Add**
+- Nombramos el ambiente ![alt text](images/image-12.png) yo lo llamé **Local** y añadimos la API key en campo **Initial value** y dejamo seleccionado este ambiente
+- Ahora, tomamos el ejemplo que nos dan en la página de el llamado de la API ![alt text](images/image-13.png) https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={API key} en donde se cambiaron la latitud y longitud de la localidad de los datos deseados
+- Lo pegamos en el **GET** de **New request** ![alt text](images/image-14.png) y camibamos el parámetro **{API key}** por la clave que añadimos en el ambiente **Local**, quedaría de al siguiente manera: ![alt text](images/image-15.png)
 - Damos click en **Send** para obtener el llamado de la API 
-- Obtenemos la siguiente respuesta en formato **JSON**: ![alt text](image-16.png)
-![alt text](image-17.png)
+- Obtenemos la siguiente respuesta en formato **JSON**: ![alt text](images/image-16.png)
+![alt text](images/image-17.png)
 
 > **_Así estaría culminado el proceso de consumo de la API de [OpenWeatherMap]_**
 
